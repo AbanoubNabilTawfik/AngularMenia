@@ -1,0 +1,8 @@
+<p>ng-for-structure-directives works!</p>
+
+<div *ngFor="let item of cars ; index as i ; odd as o ; even as e; first as f; last as l">
+  
+   <div *ngIf="e==true">
+    {{i}} {{item}} {{o}} {{e}}
+   </div>
+</div>

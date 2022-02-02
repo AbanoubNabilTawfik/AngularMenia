@@ -12,6 +12,15 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TemplateReferenceVariableComponent } from './template-reference-variable/template-reference-variable.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { FormsModule } from '@angular/forms';
+import { NgIfStructureDirectiveComponent } from './ng-if-structure-directive/ng-if-structure-directive.component';
+import { NgSwitchStructureDirectiveComponent } from './ng-switch-structure-directive/ng-switch-structure-directive.component';
+import { NgForStructureDirectivesComponent } from './ng-for-structure-directives/ng-for-structure-directives.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { SquarePipe } from './square.pipe';
 
 @NgModule({
   declarations: [
@@ -24,11 +33,21 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
     InterpolationComponent,
     PropertyBindingComponent,
     ClassBindingComponent,
-    StyleBindingComponent
+    StyleBindingComponent,
+    EventBindingComponent,
+    TemplateReferenceVariableComponent,
+    TwoWayBindingComponent,
+    NgIfStructureDirectiveComponent,
+    NgSwitchStructureDirectiveComponent,
+    NgForStructureDirectivesComponent,
+    PipesComponent,
+    SquarePipe,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

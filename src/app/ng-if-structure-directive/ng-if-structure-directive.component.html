@@ -1,0 +1,20 @@
+<p>ng-if-structure-directive works!</p>
+
+<h2 *ngIf="displayWelcomeMessage">
+    Welcome to angular course
+</h2>
+
+<div *ngIf="isLoggedIn ; then thenBlock;else elseBlock"></div>
+
+<ng-template #elseBlock>
+    <h2>
+        Welcome guest
+    </h2>
+</ng-template>
+
+<ng-template  #thenBlock>
+    <h2>
+        Welcome {{fullName}}
+    </h2>
+</ng-template>
+
