@@ -1,0 +1,5 @@
+<p>parent works!</p>
+<app-child [parentName]="fullName" (childEvent)="messageFromChild=$event" ></app-child>
+{{messageFromChild}}
+
+<button (click)="showMessage()">Show Message</button>

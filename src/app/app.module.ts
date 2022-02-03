@@ -21,6 +21,10 @@ import { NgSwitchStructureDirectiveComponent } from './ng-switch-structure-direc
 import { NgForStructureDirectivesComponent } from './ng-for-structure-directives/ng-for-structure-directives.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { SquarePipe } from './square.pipe';
+import { ParentComponent } from './Component Interaction/parent/parent.component';
+import { ChildComponent } from './Component Interaction/child/child.component';
+import { EmpListComponent } from './Services/emp-list/emp-list.component';
+import { EmpDetailsComponent } from './Services/emp-details/emp-details.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +46,10 @@ import { SquarePipe } from './square.pipe';
     NgForStructureDirectivesComponent,
     PipesComponent,
     SquarePipe,
+    ParentComponent,
+    ChildComponent,
+    EmpListComponent,
+    EmpDetailsComponent,
 
   ],
   imports: [
