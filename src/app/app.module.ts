@@ -25,7 +25,10 @@ import { ParentComponent } from './Component Interaction/parent/parent.component
 import { ChildComponent } from './Component Interaction/child/child.component';
 import { EmpListComponent } from './Services/emp-list/emp-list.component';
 import { EmpDetailsComponent } from './Services/emp-details/emp-details.component';
-
+import {HttpClientModule} from '@angular/common/http';
+import { EmployeesComponent } from './employees/employees.component';
+import { DepartmentsComponent } from './departments/departments.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,12 +53,16 @@ import { EmpDetailsComponent } from './Services/emp-details/emp-details.componen
     ChildComponent,
     EmpListComponent,
     EmpDetailsComponent,
+    EmployeesComponent,
+    DepartmentsComponent,
+    PageNotFoundComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
