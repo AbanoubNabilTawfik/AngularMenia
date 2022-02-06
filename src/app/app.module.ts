@@ -29,6 +29,10 @@ import {HttpClientModule} from '@angular/common/http';
 import { EmployeesComponent } from './employees/employees.component';
 import { DepartmentsComponent } from './departments/departments.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DepartmentDetailsComponent } from './department-details/department-details.component';
+import { DepartmentOverviewComponent } from './department-overview/department-overview.component';
+import { DepartmentContactComponent } from './department-contact/department-contact.component';
+import { TdfComponent } from './tdf/tdf.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +60,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     EmployeesComponent,
     DepartmentsComponent,
     PageNotFoundComponent,
+    DepartmentDetailsComponent,
+    DepartmentOverviewComponent,
+    DepartmentContactComponent,
+    TdfComponent,
 
   ],
   imports: [
